@@ -24,8 +24,8 @@ import org.xml.sax.SAXException;
 public class ResumePDFParser {
 
     public static void main(final String[] args) throws IOException, TikaException, SAXException {
-
-        String dosyayolu = "/home/dawnsoldier/NetBeansProjects/JavaApplication1/src/javaapplication1/profile4.pdf";
+        // PDF nin tam dosya yolu burada belirtilmeli
+        String dosyayolu = "/home/tanergergul/ResumeExamples/example.pdf";
         BodyContentHandler handler = new BodyContentHandler();
         Metadata metadata = new Metadata();
         FileInputStream inputstream = new FileInputStream(new File(dosyayolu));
